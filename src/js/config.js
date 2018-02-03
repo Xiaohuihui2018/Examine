@@ -1,0 +1,11 @@
+require.config({
+    paths:{
+        'jquery':'../lib/jquery-3.2.1',
+        'carousel':'../lib/jquery.carousel/carousel-ZSH',
+        'zoom':'../lib/jquery.myZoom/jquery.myZoom'
+    },
+    shim:{
+        'carousel':['jquery'],
+        'zoom':['jquery']
+    }
+})

@@ -1,0 +1,31 @@
+{
+  "name": "examine",
+  "version": "1.0.0",
+  "description": "Personal Examine",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xiaohuihui2018/Examine.git"
+  },
+  "keywords": [
+    "git",
+    "nodejs"
+  ],
+  "author": "Lance",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xiaohuihui2018/Examine/issues"
+  },
+  "homepage": "https://github.com/Xiaohuihui2018/Examine#readme"
+}
