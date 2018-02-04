@@ -182,7 +182,7 @@
 }
 
 #showNews .container div:hover {
-  transform: scale(1.15, 1.15) translate(0, -12px);
+  transform: scale(1.12, 1.12) translate(0, -30px);
   box-shadow: 5px 6px 14px black;
   background: white;
 }
@@ -203,12 +203,12 @@
 }
 
 #choice .container {
-  border: 1px solid #E3E3E3;
   padding: 20px 20px 16px 16px;
+  box-shadow: 0px 1px 6px black;
 }
 
 #choice .container .DMch {
-  width: 500px;
+  width: 520px;
 }
 
 #choice .container .DMch div {
@@ -217,21 +217,394 @@
   border: 1px solid #CECECE;
   height: 30px;
   margin-right: 10px;
+  border-radius: 4px;
 }
 
-#choice .container .DMch div i {
+#choice .container .DMch div p {
   width: 48px;
-  height: 30px;
-  background: #848484;
+  height: 29px;
+  background: #B7B7B7;
   display: inline-block;
   text-align: center;
+  border-radius: 4px 0 0 4px;
+  font-weight: 600;
+}
+
+#choice .container .DMch div span {
+  width: 32px;
+  height: 19px;
+  border: 1px solid #8E8E8E;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 10px;
+  background: #E6E7E2;
+  line-height: 19px;
+  text-align: center;
+  display: inline-block;
+}
+
+#choice .container .DMch div span:hover {
+  background: #050505;
+  color: white;
+  cursor: pointer;
 }
 
 #choice .container .DMch .d1 {
   width: 212px;
 }
 
+#choice .container .DMch .d1 p {
+  margin-right: 10px;
+}
+
 #choice .container .DMch .d1 input {
   width: 42px;
   height: 18px;
+}
+
+#choice .container .DMch .d2 {
+  width: 293px;
+  margin-right: 0;
+}
+
+#choice .container .DMch .d2 span {
+  margin-right: 4px;
+  width: 26px;
+}
+
+#choice .container .DMch .d3 {
+  width: 212px;
+  margin-top: 16px;
+}
+
+#choice .container .DMch .d3 span {
+  margin-right: 4px;
+  width: 31px;
+}
+
+#choice .container .DMch .d4 {
+  width: 293px;
+  margin-right: 0;
+  margin-top: 16px;
+}
+
+#choice .container .DMch .d4 span {
+  margin-right: 3px;
+}
+
+#choice .container .DMch .d4 p {
+  margin-right: 2px;
+}
+
+#choice .container .DMch .ser_dm {
+  margin-left: 380px;
+  margin-top: 12px;
+  height: 30px;
+  width: 86px;
+  font-size: 14px;
+  background: #262520;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 2px;
+}
+
+#choice .container .DMch .ser_dm:hover {
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+#main1, #main3 {
+  margin-top: 18px;
+}
+
+#main1 .container, #main3 .container {
+  height: 430px;
+  border: 1px solid #AAAAAA;
+  padding-left: 9px;
+}
+
+#main1 .container img:hover, #main3 .container img:hover {
+  cursor: pointer;
+  transform: translate(0, -20px);
+  box-shadow: 5px 6px 14px black;
+  transition: all 0.6s;
+}
+
+#main1 .container .kind, #main3 .container .kind, #main1 .container .show_img, #main3 .container .show_img, #main1 .container .goods_show, #main3 .container .goods_show {
+  float: left;
+  margin-right: 4px;
+  margin-top: 6px;
+}
+
+#main1 .container .kind, #main3 .container .kind {
+  background: #F8F8F8;
+  width: 309px;
+  height: 412px;
+}
+
+#main1 .container .kind .more, #main3 .container .kind .more {
+  margin-bottom: 6px;
+}
+
+#main1 .container .kind span, #main3 .container .kind span {
+  margin: 0 221px 0 25px;
+  display: inline-block;
+  width: 100px;
+  padding: 6px 0;
+  font-weight: 600;
+}
+
+#main1 .container .kind span:hover, #main3 .container .kind span:hover {
+  cursor: pointer;
+}
+
+#main1 .container .kind span:hover:hover, #main3 .container .kind span:hover:hover {
+  color: #D50000;
+}
+
+#main1 .container .kind .name_kind, #main3 .container .kind .name_kind {
+  height: 110px;
+}
+
+#main1 .container .kind img:hover, #main3 .container .kind img:hover {
+  transform: translate(0, 0);
+  box-shadow: 0 5 10px black;
+  transition: all 0.6s;
+}
+
+#main1 .container .goods_show, #main3 .container .goods_show {
+  margin: 0;
+  width: 600px;
+}
+
+#main1 .container .goods_show div, #main3 .container .goods_show div {
+  float: left;
+}
+
+#main2, #main4, #main5 {
+  margin-top: 18px;
+}
+
+#main2 .container, #main4 .container, #main5 .container {
+  height: 430px;
+  border: 1px solid #AAAAAA;
+  padding-left: 6px;
+}
+
+#main2 .container img:hover, #main4 .container img:hover, #main5 .container img:hover {
+  cursor: pointer;
+  transform: translate(0, -20px);
+  box-shadow: 5px 6px 14px black;
+  transition: all 0.6s;
+}
+
+#main2 .container .kind, #main4 .container .kind, #main5 .container .kind, #main2 .container .show_img, #main4 .container .show_img, #main5 .container .show_img, #main2 .container .goods_show, #main4 .container .goods_show, #main5 .container .goods_show {
+  float: left;
+  margin-right: 2px;
+  margin-top: 6px;
+}
+
+#main2 .container .kind, #main4 .container .kind, #main5 .container .kind {
+  background: #F8F8F8;
+  width: 309px;
+  height: 412px;
+}
+
+#main2 .container .kind .more, #main4 .container .kind .more, #main5 .container .kind .more {
+  margin-bottom: 6px;
+}
+
+#main2 .container .kind span, #main4 .container .kind span, #main5 .container .kind span {
+  margin: 0 221px 0 25px;
+  display: inline-block;
+  width: 100px;
+  padding: 6px 0;
+  font-weight: 600;
+}
+
+#main2 .container .kind span:hover, #main4 .container .kind span:hover, #main5 .container .kind span:hover {
+  cursor: pointer;
+}
+
+#main2 .container .kind span:hover:hover, #main4 .container .kind span:hover:hover, #main5 .container .kind span:hover:hover {
+  color: #D50000;
+}
+
+#main2 .container .kind .name_kind, #main4 .container .kind .name_kind, #main5 .container .kind .name_kind {
+  height: 110px;
+}
+
+#main2 .container .kind img:hover, #main4 .container .kind img:hover, #main5 .container .kind img:hover {
+  transform: translate(0, 0);
+  box-shadow: 0 5 10px black;
+  transition: all 0.6s;
+}
+
+#main2 .container .show_img, #main4 .container .show_img, #main5 .container .show_img {
+  margin-right: 0;
+}
+
+#main2 .container .goods_show, #main4 .container .goods_show, #main5 .container .goods_show {
+  margin-top: 0;
+  width: 600px;
+}
+
+#main2 .container .goods_show div, #main4 .container .goods_show div, #main5 .container .goods_show div {
+  float: left;
+}
+
+#homeline1 {
+  height: 116px;
+}
+
+#homeline1 .container {
+  margin-top: 16px;
+  box-shadow: 1px 3px 7px #CECFC7;
+}
+
+#homeline1 .container div {
+  float: left;
+  margin-right: 8px;
+}
+
+#homeline1 .container div:first-child {
+  margin-right: 11px;
+}
+
+#homeline1 .container div:last-child {
+  margin-right: 0;
+}
+
+#homeline1 .container img {
+  transition: all 0.6s;
+}
+
+#homeline1 .container img:hover {
+  border-radius: 40px;
+  box-shadow: 0px 0px 14px black;
+  cursor: pointer;
+}
+
+#homeline2 {
+  margin-top: 16px;
+}
+
+#homeline2 img {
+  transition: all 0.6s;
+}
+
+#homeline2 img:hover {
+  border-radius: 40px;
+  box-shadow: 0px 0px 14px black;
+  cursor: pointer;
+}
+
+#news {
+  margin-top: 16px;
+}
+
+#news .container div {
+  float: left;
+  width: 323px;
+  height: 288px;
+  border: 1px solid #E0E0E0;
+  margin-right: 8px;
+}
+
+#news .container div:last-child {
+  width: 185px;
+  margin-right: 0;
+}
+
+#news .container div h5 {
+  padding-left: 16px;
+  font-size: 14px;
+  height: 36px;
+  line-height: 36px;
+  background: -webkit-linear-gradient(90deg, #B7B6AA 0, white 80%);
+}
+
+#news .container div img {
+  margin: 6px auto 0;
+}
+
+#news .container div img:last-child {
+  margin-top: 0;
+}
+
+#news .container div ul {
+  list-style: disc;
+  margin-left: 22px;
+}
+
+#news .container div ul li {
+  height: 28px;
+  line-height: 28px;
+}
+
+#news .container div ul li a:hover {
+  color: #A60000;
+}
+
+#footer {
+  margin-top: 40px;
+}
+
+#footer .cityshop {
+  height: 282px;
+}
+
+#footer .cityshop .cityCh {
+  height: 30px;
+  line-height: 30px;
+}
+
+#footer .cityshop .cityCh h5 {
+  width: 366px;
+  padding-left: 20px;
+  font-size: 18px;
+  float: left;
+}
+
+#footer .cityshop .cityCh .city span {
+  width: 60px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 600;
+}
+
+#footer .cityshop .cityCh .city span:hover {
+  cursor: pointer;
+  background: url("../img/select.gif") 0 -4px;
+}
+
+#footer .detail_city {
+  border: 1px solid #8D917D;
+  border-top: 3px solid #6A6D5C;
+}
+
+#footer .detail_city .address {
+  background: url("../img/map.png") no-repeat center;
+  float: left;
+  padding-top: 38px;
+  width: 674px;
+  height: 225px;
+  text-align: center;
+}
+
+#footer .detail_city .address p {
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#footer .detail_city .address .ad1 {
+  font-weight: 600;
+}
+
+#footer .detail_city .city_img {
+  float: right;
 }

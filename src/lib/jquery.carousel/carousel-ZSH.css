@@ -4,5 +4,5 @@
 .carousel-ZSH .next,.carousel-ZSH .prev{position:absolute;left:0;top:50%;transform: translate(0,-50%);padding:10px 5px;width:16px;height:30px;background-color: rgba(0,0,0,.3);z-index: 3;}
 .carousel-ZSH .next{left:auto;right:0;}
 .carousel-ZSH .page{position: absolute;right:20px;bottom:12px;}
-.carousel-ZSH .page span{display:inline-block;margin:0 4px;width:10px;height:10px;line-height:10px;text-align:center;background-color:#FFFFFF;border-radius:50%;transition: 0.8s;}
-.carousel-ZSH .page span.active{background-color:#1D1E1A;margin:0;width: 17px;height: 9px;color:#fff;border-radius:34%;opacity:1;}
+.carousel-ZSH .page span{display:inline-block;margin:0 8px;width:10px;height:10px;line-height:10px;text-align:center;background-color:#E4E4E4;border-radius:50%;transition: 0.8s;}
+.carousel-ZSH .page span.active{background-color:#121210;margin:0;width: 20px;height: 9px;color:#fff;border-radius:34%;opacity:1;}
