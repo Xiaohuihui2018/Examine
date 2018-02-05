@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .topbar {
   background: #F2F2F2;
   height: 36px;
@@ -46,6 +47,7 @@
   text-align: right;
 }
 
+/*---------------搜索-----------------*/
 .search {
   height: 100px;
   padding-top: 6px;
@@ -95,6 +97,7 @@
   display: inline-block;
 }
 
+/*-----------导航-------*/
 .nav {
   height: 38px;
   line-height: 38px;
@@ -124,6 +127,17 @@
   font-size: 14px;
   display: inline-block;
   margin-left: -552px;
+  position: relative;
+}
+
+.nav .container h1 i {
+  position: absolute;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: url("../img/icon.png") -7px -8px;
+  right: 18px;
+  top: 15px;
 }
 
 .nav .container ul {
@@ -162,10 +176,12 @@
   height: 67px;
 }
 
+/*--------------轮播图-------------*/
 #banner {
   margin: 0 auto;
 }
 
+/*-----------活动展示-------*/
 #showNews {
   height: 245px;
   padding-top: 16px;
@@ -198,6 +214,7 @@
   margin-right: 0px;
 }
 
+/*----------钻石筛选---------------*/
 #choice {
   height: 160px;
 }
@@ -316,6 +333,7 @@
   transition: all 0.3s;
 }
 
+/*---------主模块1------------*/
 #main1, #main3 {
   margin-top: 18px;
 }
@@ -384,6 +402,7 @@
   float: left;
 }
 
+/*---------主模块2------------*/
 #main2, #main4, #main5 {
   margin-top: 18px;
 }
@@ -456,6 +475,10 @@
   float: left;
 }
 
+/*---------主模块3------------*/
+/*---------主模块4------------*/
+/*---------主模块5------------*/
+/*---------图片入口1------------*/
 #homeline1 {
   height: 116px;
 }
@@ -488,6 +511,7 @@
   cursor: pointer;
 }
 
+/*---------图片入口2------------*/
 #homeline2 {
   margin-top: 16px;
 }
@@ -502,6 +526,7 @@
   cursor: pointer;
 }
 
+/*---------新闻------------*/
 #news {
   margin-top: 16px;
 }
@@ -549,6 +574,7 @@
   color: #A60000;
 }
 
+/*---------尾部------------*/
 #footer {
   margin-top: 40px;
 }
@@ -607,4 +633,161 @@
 
 #footer .detail_city .city_img {
   float: right;
+}
+
+#footer .footer_img {
+  margin-left: 10px;
+}
+
+#footer .footer_img img {
+  margin: 0 auto;
+}
+
+#footer .service {
+  padding-top: 16px;
+  background: #E8E8E8;
+  height: 160px;
+}
+
+#footer .service .container div {
+  float: left;
+  width: 194px;
+  border-right: 1px solid #B7B7B7;
+}
+
+#footer .service .container div:first-child {
+  border-left: 1px solid #B7B7B7;
+}
+
+#footer .service ul {
+  padding-left: 52px;
+  padding-top: 20px;
+  height: 130px;
+  position: relative;
+}
+
+#footer .service ul li {
+  height: 26px;
+  line-height: 26px;
+}
+
+#footer .service ul li a {
+  color: #4B4E43;
+}
+
+#footer .service ul li a:hover {
+  color: red;
+}
+
+#footer .service ul span {
+  font-weight: 600;
+}
+
+#footer .service ul i {
+  position: absolute;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  top: 15px;
+  left: 26px;
+  background: url("../img/s_img.fw.png") -10px -4px;
+}
+
+#footer .service div:nth-child(2) i {
+  background-position: -50px;
+}
+
+#footer .service div:nth-child(3) i {
+  background-position: -90px;
+}
+
+#footer .service div:nth-child(4) i {
+  background-position: -130px;
+}
+
+#footer .service div:nth-child(5) i {
+  background-position: -170px;
+}
+
+#footer .service div:nth-child(6) i {
+  background-position: -210px;
+}
+
+#footer .rights {
+  height: 98px;
+  background: #323232;
+}
+
+#footer .rights p {
+  padding: 20px 0 0 30px;
+  color: #AAAC9D;
+}
+
+#footer .rights p span {
+  color: red;
+}
+
+#footer .attestation .container {
+  height: 85px;
+  background: url("../img/footer_att.png") -11px 0;
+}
+
+#footer .attestation .container div {
+  float: left;
+  width: 120px;
+  height: 50px;
+  margin-right: 56px;
+  margin-top: 16px;
+}
+
+#footer .attestation .container div:last-child {
+  margin-right: 0;
+}
+
+#footer .attestation .container div a {
+  height: 50px;
+  width: 120px;
+  display: inline-block;
+}
+
+#footer .link {
+  background: #E8E8E8;
+  padding: 18px 0 0 36px;
+}
+
+#footer .link .container {
+  height: 110px;
+  color: #838673;
+}
+
+#footer .link .container span {
+  display: inline-block;
+  width: 125px;
+  text-align: center;
+  float: left;
+}
+
+#footer .link .container .netLink {
+  width: 1046px;
+  height: 60%;
+  float: left;
+}
+
+#footer .link .container .netLink a {
+  display: inline-block;
+  width: 90px;
+  margin-bottom: 10px;
+  color: #838673;
+}
+
+#footer .link .container .netLink a:hover {
+  color: red;
+}
+
+#footer .link .container p {
+  text-align: right;
+  padding-right: 50px;
+  height: 30px;
+  float: right;
+  margin-top: 20px;
 }

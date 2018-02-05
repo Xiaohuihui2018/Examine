@@ -57,7 +57,7 @@
                 clearInterval(timer);
            }).on('mouseleave',function(){
                 if($opts.type!='fade' && $opts.marquee==true){
-                    $('li').last().remove();
+                    $this.find('li').last().remove();
                 }
                 autoRoll();
            });
@@ -65,7 +65,6 @@
            if($opts.change==true){
                 $('.next').click(function(){
                     //无缝点击
-                    console.log($opts.marquee);
                     if($opts.marquee){
                         console.log('无缝');
                         $opts.index++;
