@@ -1,0 +1,224 @@
+#register {
+  height: 606px;
+  background: #FEF4F3;
+  padding-top: 62px;
+}
+
+#register .register_img {
+  width: 663px;
+  height: 544px;
+  float: left;
+  background: url("../img/register_img");
+}
+
+#register .register_in {
+  float: left;
+  width: 402px;
+  height: 512px;
+  border-radius: 17px;
+  box-shadow: 9px 10px 26px black;
+  background: #F4F4F4;
+}
+
+#register .register_in .top {
+  height: 40px;
+  background: -webkit-linear-gradient(90deg, #DEDFD9 0, white 40%);
+  border-radius: 17px 17px 0 0;
+  line-height: 40px;
+}
+
+#register .register_in .top p {
+  width: 312px;
+  display: inline-block;
+  padding-left: 16px;
+  font-size: 14px;
+}
+
+#register .register_in .top p span {
+  color: #C40000;
+  font-size: 14px;
+}
+
+#register .register_in .top a {
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}
+
+#register .register_in .mid {
+  padding: 12px 0 0 56px;
+}
+
+#register .register_in .mid span {
+  font-size: 14px;
+}
+
+#register .register_in .mid div {
+  margin-top: 17px;
+  height: 35px;
+  border: 1px solid #ADADAD;
+  width: 280px;
+  background: white;
+  border-radius: 4px;
+  line-height: 34px;
+  padding-left: 6px;
+}
+
+#register .register_in .mid div span:first-child {
+  border-right: 1px solid #ADADAD;
+  display: inline-block;
+  height: 33px;
+  width: 60px;
+}
+
+#register .register_in .mid input {
+  border: none;
+  height: 26px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+#register .register_in .mid .m1 span {
+  border-right: 1px solid #ADADAD;
+  height: 33px;
+  display: inline-block;
+}
+
+#register .register_in .mid .m1, #register .register_in .mid .m3, #register .register_in .mid .m4, #register .register_in .mid .m5 {
+  position: relative;
+}
+
+#register .register_in .mid .m1 i, #register .register_in .mid .m3 i, #register .register_in .mid .m4 i, #register .register_in .mid .m5 i {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("../img/register.fw.png") -20px -4px;
+  right: 5px;
+  top: 5px;
+  position: absolute;
+}
+
+#register .register_in .mid .m2 {
+  width: 226px;
+  display: inline-block;
+}
+
+#register .register_in .mid .m2 input {
+  width: 93px;
+}
+
+#register .register_in .mid .m2 + i {
+  color: red;
+  padding-left: 12px;
+}
+
+#register .register_in .mid .m2 + i:hover {
+  cursor: pointer;
+}
+
+#register .register_in .mid .m2 #vcode {
+  display: inline-block;
+  width: 65px;
+  background: #575757;
+  height: 33px;
+  font-size: 15px;
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+#register .register_in .mid .m2 #vcode:hover {
+  cursor: pointer;
+}
+
+#register .register_in .mid .m3 input {
+  width: 112px;
+}
+
+#register .register_in .mid .m3 span {
+  display: inline-block;
+  width: 100px;
+}
+
+#register .register_in .mid .m3 span:last-child {
+  padding-left: 26px;
+  background: #F6F6F6;
+  height: 32px;
+  border-radius: 0 4px 4px 0;
+}
+
+#register .register_in .mid .m3 span:last-child i {
+  background-position: -118px -3px;
+  right: 72px;
+  top: 6px;
+}
+
+#register .register_in .mid .m4 i, #register .register_in .mid .m5 i {
+  background-position: -63px -2px;
+}
+
+#register .register_in .mid .m6 {
+  border: none;
+  background: #F4F4F4;
+}
+
+#register .register_in .mid .m6 span {
+  font-size: 12px;
+}
+
+#register .register_in .mid .m6 a:hover {
+  color: blue;
+}
+
+#register .register_in .mid .m6 input {
+  vertical-align: middle;
+}
+
+#register .register_in .mid .m7 {
+  border: none;
+  padding-left: 0;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+#register .register_in .mid .m7 button {
+  border: none;
+  background: -webkit-linear-gradient(90deg, #CA0000 0, #FFBFBF 100%);
+  width: 100%;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#register .register_in .mid .m7 p {
+  font-size: 14px;
+}
+
+#register .register_in .bot {
+  height: 64px;
+  background: white;
+  border-radius: 0 0 17px 17px;
+  margin-top: 43px;
+  padding-left: 56px;
+}
+
+#register .register_in .bot div {
+  float: left;
+  width: 100px;
+}
+
+#register .register_in .bot div a {
+  display: inline-block;
+  width: 100%;
+  height: 64px;
+  padding: 6px 7px;
+}
+
+#register .register_in .bot div:first-child a {
+  padding-top: 20px;
+}
+
+#register .register_in .bot div:nth-child(2) a {
+  padding-left: 26px;
+}

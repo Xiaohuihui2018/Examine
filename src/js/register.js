@@ -11,6 +11,15 @@ require(['config'],function(){
             });
         });
         $('#footer').load('header_footer.html #footer');
-        
+        $('.m1 input').blur(function(){
+            var phone=$(this).val().trim();
+            $.ajax({
+                url: '../api/data/register.php',
+                type: 'POST',
+                data: {phone:phone},
+                success:function(res) {
+                console.log(res);}
+            });
+        });
     });
 });
