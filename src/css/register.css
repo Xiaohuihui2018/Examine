@@ -100,11 +100,13 @@
 
 #register .register_in .mid .m2 {
   width: 226px;
+  position: relative;
   display: inline-block;
 }
 
 #register .register_in .mid .m2 input {
   width: 93px;
+  font-size: 13px;
 }
 
 #register .register_in .mid .m2 + i {
@@ -135,9 +137,17 @@
   width: 112px;
 }
 
+#register .register_in .mid .m3 .active {
+  background: #D2D3CD;
+}
+
 #register .register_in .mid .m3 span {
   display: inline-block;
   width: 100px;
+}
+
+#register .register_in .mid .m3 span:hover {
+  cursor: pointer;
 }
 
 #register .register_in .mid .m3 span:last-child {
@@ -193,6 +203,30 @@
 
 #register .register_in .mid .m7 p {
   font-size: 14px;
+}
+
+#register .register_in .mid .m1 .check, #register .register_in .mid .m2 .check, #register .register_in .mid .m3 .check, #register .register_in .mid .m4 .check, #register .register_in .mid .m5 .check {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: -40px;
+  top: 5px;
+  background: none;
+}
+
+#register .register_in .mid .m2 .check {
+  right: -94px;
+}
+
+#register .register_in .mid .m1 .right, #register .register_in .mid .m2 .right, #register .register_in .mid .m3 .right, #register .register_in .mid .m4 .right, #register .register_in .mid .m5 .right {
+  background: url("../img/confirmation.png");
+  background-size: 24px;
+}
+
+#register .register_in .mid .m1 .error, #register .register_in .mid .m2 .error, #register .register_in .mid .m3 .error, #register .register_in .mid .m4 .error, #register .register_in .mid .m5 .error {
+  background: url("../img/error.png");
+  background-size: 24px;
 }
 
 #register .register_in .bot {
