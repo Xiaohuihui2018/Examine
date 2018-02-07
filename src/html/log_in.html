@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/base.css" />
         <link rel="stylesheet" href="../css/header_footer.css"/>
-        <!-- <link rel="stylesheet" href="../css/log_in.css" /> -->
+        <link rel="stylesheet" href="../css/log_in.css" />
         <script src="../js/require.js" data-main="../js/log_in"></script>
     </head>
     <body>
@@ -16,30 +16,21 @@
                 </div>
                 <div class="register_in">
                     <div class="top">
-                        <p>免费注册 &nbsp;<span>REGISTER</span></p>
-                        <a href="#">会员登陆</a>
+                        <p>会员登录 &nbsp;<span>LOGIN</span></p>
+                        <a href="register.html">免费注册</a>
                     </div>
                     <div class="mid">
                         <div class="m1"><i></i>
                             <span>手机号码</span><input type="text" placeholder="11位数字" id="phone" /><i class='check'></i>
                         </div>
                         <div class="m2">
-                            <span>验证码</span><input type="text" id="cv" placeholder="请输入验证码"/><span id="vcode">4535</span><i class='check'></i>
-                        </div><i id="chC">换一张</i>
+                            <span>登录密码</span><input type="password" placeholder="6-20位必须包含数字字母"/><i></i><i class='check'></i>
+                        </div>
                         <div class="m3">
-                            <span>短信验证</span><input type="text" placeholder="6位数字" id="msVoce" /><span><i></i>获取验证码</span><i class='check'></i>
+                            <input type="checkbox"/>
+                            <span>自动登录<a href="#">忘记密码</a></span>
                         </div>
                         <div class="m4">
-                            <span>设置密码</span><input type="text" placeholder="6-20位必须包含数字字母"/><i></i><i class='check'></i>
-                        </div>
-                        <div class="m5">
-                            <span>确认密码</span><input type="text" placeholder="6-20位必须包含数字字母"/><i></i><i class='check'></i>
-                        </div>
-                        <div class="m6">
-                            <input type="checkbox"/>
-                            <span>我已阅读并同意 <a href="#">《戴欧妮珠宝用户服务协议》</a></span>
-                        </div>
-                        <div class="m7">
                             <button id="submit">会员注册</button>
                             <p>使用第三方帐号登录</p>
                         </div>

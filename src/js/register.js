@@ -29,17 +29,26 @@ require(['config'],function(){
         $('#chC').click(function(){
             creatVcode();
         });
-        //手机验证
-        // $('.m1 input').blur(function(){
-        //     var phone=$(this).val().trim();
-        //     // $.ajax({
-        //     //     url: '../api/data/register.php',
-        //     //     type: 'POST',
-        //     //     data: {phone:phone},
-        //     //     success:function(res) {
-        //     //     console.log(res);}
-        //     // });
-        // });
+        // 手机验证是否存在
+        var phone;
+        $('.m1 input').change(function(){
+            phone=$(this).val().trim();
+            if(/^1[\d]{10}$/.test(phone)){
+                $.ajax({
+                    url: '../api/MySQL/register.php',
+                    data: {UserName:phone},
+                    success:function(res) {
+                        if(res=='yes'){
+                            $('.m1 .check').removeClass('error').addClass('right');
+                        }else{
+                            $('.m1 .check').removeClass('right').addClass('error');
+                        }
+                    }
+                })
+            }else{
+                $('.m1 .check').removeClass('right').addClass('error');
+            }
+        });
         //验证码校对
         $('#cv').change(function(){
             var user_V=$(this).val().trim();
@@ -79,12 +88,14 @@ require(['config'],function(){
             psw1=$(this).val().trim();
             if(/^[a-zA-Z\d]{6,20}$/.test(psw1)){
                 $('.m4 .check').removeClass('error').addClass('right');
+                if(psw1==psw2){ $('.m5 .check').removeClass('error').addClass('right');}
             }else{
                 $('.m4 .check').removeClass('right').addClass('error');
             }
         });
+        var psw2;
         $('.m5 input').change(function(){
-            var psw2=$(this).val().trim();
+            psw2=$(this).val().trim();
             psw1===psw2 ? $('.m5 .check').removeClass('error').addClass('right') : $('.m5 .check').removeClass('right').addClass('error');
         });
         //同意协议
@@ -95,15 +106,26 @@ require(['config'],function(){
                 $('.m6 input').removeClass('right').addClass('error');
             }
         });
-        //同意注册判断
-        $('#submit').click(function(){
-            console.log($('.register_in .right').length)
-            if($('.register_in .right').length==5){
-                console.log('符合')
-            }else{
-                console.log('不符合');
+        //判断最终注册条件
+        $('#submit').on('click',function(){
+            if($('.register_in .right').length==6){
+                console.log(phone,psw1);
+                $.ajax({
+                    url: '../api/MySQL/register.php',
+                    data: {
+                        UserName:phone,
+                        PassWord:psw1,
+                        submit:'yes'
+                    },
+                    success:function(res){
+                        if(res==='success'){
+                             location.href='log_in.html';
+                         }else{
+                            alert('服务器异常，稍后再试');
+                         }
+                    }
+                });  
             }
-
         });
     });
 });

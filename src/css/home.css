@@ -5,12 +5,18 @@
   line-height: 36px;
 }
 
+.topbar .pN i {
+  color: red;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 .topbar .right {
-  padding-left: 40px;
+  padding-left: px;
 }
 
 .topbar .right a {
-  width: 88px;
+  width: 84px;
   display: inline-block;
   text-align: center;
   background: url("../img/icon.png") no-repeat;

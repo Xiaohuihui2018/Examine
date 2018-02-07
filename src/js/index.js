@@ -1,5 +1,10 @@
 require(['config'],function(){
     require(['jquery','carousel'],function($){
+        if(/\?/.test(location.href)){
+            var num=location.href.indexOf('?');
+            var phoneN=location.href.slice(num+10);
+            $('#phoneName').html('尊敬的<i>'+phoneN+'</i>用户').addClass('pN');
+        }
         //二级导航
         var timer_nav;
         $('h1').mouseenter(function() {
@@ -17,7 +22,6 @@ require(['config'],function(){
             page:true,
             type:'horizontal'
         });
-        // 门店数据
         var cityData=[
             {   city:'北京',
                 ad1:'北京·朝阳区旗舰店 体验中心',

@@ -1,15 +1,19 @@
 .topbar{
     background: #F2F2F2;height: 36px;line-height: 36px;
+    .pN{
+        i{color:red;font-weight:600;font-size:14px;}
+    }
     .right{
-        a{width: 88px;display:inline-block;text-align:center;background:url('../img/icon.png') no-repeat;line-height:25px;}
+        a{width: 84px;display:inline-block;text-align:center;background:url('../img/icon.png') no-repeat;line-height:25px;}
         .cart{width:100px;}
-        padding-left: 40px;
+        padding-left: px;
         a:first-child{background-position:-5px -16px};
         a:nth-child(2){background:none;}
         a:nth-child(3),a:nth-child(4){background-position:4px -35px;}
         a:nth-child(5){background-position:3px -60px;}
         a:nth-child(6){background-position:7px -91px;}
         a:nth-child(7){background-position:-2px -124px;width: 50px;text-align:right;}
+
     }
 }
 /*---------------搜索-----------------*/
