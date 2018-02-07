@@ -3,7 +3,7 @@
        var $defaults={
             width:320,
             height:180,
-            duration:3000,
+            duration:2600,
             type:'fade',
             page:true,
             index:0,

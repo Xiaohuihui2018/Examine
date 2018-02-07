@@ -80,8 +80,8 @@
             }
             .d3{width: 212px;margin-top: 16px;span{margin-right: 4px;width: 31px;}}
             .d4{width: 293px;margin-right: 0;margin-top: 16px;span{margin-right: 3px;}p{margin-right: 2px;}}
-            .ser_dm{margin-left: 380px;margin-top: 12px;height: 30px;width: 86px;font-size:14px;background:#262520;border:none;border-radius:6px;font-weight:600;color:white;letter-spacing:2px;
-                &:hover{cursor:pointer;font-size:16px;transition:all 0.3s;}
+            .ser_dm{margin-left: 380px;margin-top: 12px;height: 30px;width: 86px;background:#262520;border:none;border-radius:6px;font-weight:600;letter-spacing:2px;a{font-size:14px;color:white;}
+                a:hover{font-size:16px;transition:all 0.3s;}
             }
             
         }

@@ -324,17 +324,19 @@
   margin-top: 12px;
   height: 30px;
   width: 86px;
-  font-size: 14px;
   background: #262520;
   border: none;
   border-radius: 6px;
   font-weight: 600;
-  color: white;
   letter-spacing: 2px;
 }
 
-#choice .container .DMch .ser_dm:hover {
-  cursor: pointer;
+#choice .container .DMch .ser_dm a {
+  font-size: 14px;
+  color: white;
+}
+
+#choice .container .DMch .ser_dm a:hover {
   font-size: 16px;
   transition: all 0.3s;
 }

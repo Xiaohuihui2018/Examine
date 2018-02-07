@@ -8,8 +8,10 @@ require(['config'],function(){
                 $('.categor').slideDown(300);
             }).mouseleave(function() {
                 timer_nav=setTimeout(function(){$('.categor').slideUp(300)},500);
+            }).on('click','a',function(){
+                location.href='list.html'
             });
-        });
+        })
         $('#footer').load('footer.html #footer',function(){
             var cityData=[
                 {   city:'北京',
