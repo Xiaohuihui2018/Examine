@@ -98,6 +98,55 @@ require(['config'],function(){
             }
             });
         });
+        //珠宝箱数据
+        var buylist=[];
+        var buy_qty=0;
+        var cookies = document.cookie;
+        cookies = cookies.split('; ');
+        cookies.forEach(function(item){
+            var arr = item.split('=');
+            if(arr[0] === 'buylist'){
+                buylist= JSON.parse(arr[1]);
+                buylist.forEach(function(item){
+                    buy_qty+=item.qty*1;
+                });
+                setTimeout(()=>{$('#carnumber').text(buy_qty);},1000);
+            }
+        });
+        //由COOKIE生成页面数据
+        if(buylist.length>0){
+            var html=buylist.map(function(item){
+            return `<div class="g1">
+                        <span><img src="${item.img}"/></span>
+                        <span>${item.name}</span>
+                        <span><del>${item.op}</del></span>
+                        <span>${item.op-item.np}</span>
+                        <span>${item.np}</span>
+                        <span>${item.qty}</span>
+                        <span class="del">删除</span>
+                    </div>`;
 
+            }).join('');
+            $('.buy').html(html);
+            $('.s1 i').text(buy_qty);
+        function cal(){
+            var total1=0;
+            var cut=0;
+            var total2=0;
+            buylist.forEach(function(item){
+                total1+=item.qty*item.op;
+                total2+=item.qty*item.np;   
+            });
+            cut=total1-total2;
+            }
+            $('.s4 i').text('￥'+total1);
+            $('.s6 i').text('￥'+total2);
+            $('.s5 i').text('￥'+cut);
+        };
+        cal();  
+        $('.buy').on('click','.del',function(){
+            $(this).parent('div').remove();
+        });
+        console.log(buylist);
     });
 });

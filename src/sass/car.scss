@@ -1,0 +1,23 @@
+#main{background: #FDF0EE;
+    padding-top: 20px;
+    .container{border-top:3px solid #FF8080;background: white;padding: 0 0 2px 20px;
+        .p1{background:url('../img/litcar.png') no-repeat -20px -4px;height: 48px;width: 1140px;line-height: 48px;font-weight:600;border-bottom:1px solid #C3C3C3;padding-left:40px;}
+        .p2,.buy{
+            span{display:inline-block;width: 159px;text-align:center;}
+        }
+        .p2 {span{height: 50px;line-height: 50px;}}
+        .buy{background:#F9F9F9;margin-right: 20px;
+            span{height: 150px;vertical-align:middle;line-height: 150px;overflow:hidden;}
+            img{width: 150px;height: 150px;border:1px solid #C2C2C2;}
+            div{margin-top: 20px;.del{cursor:pointer;}}
+
+        }
+        .bottom{background: #F4F4F2;margin: 20px 20px 20px 0;height: 40px;line-height: 40px;padding-left: 20px;
+           .s1 {i{color:red;}margin-right: 20px;}
+           .s2{cursor:pointer;margin-right: 30px;}
+           .s3{a{color:red;}margin-right: 300px;}
+           .s4,.s5,.s6{i{color:red;font-weight:600;font-size:14px;}}
+           .s7{margin-left: 115px;display:inline-block;width: 80px;height: 30px;background: #FF641A;color:white;text-align:center;line-height: 30px;font-size:16px;}
+        }
+    }
+}

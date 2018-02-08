@@ -2,7 +2,7 @@ require(['config'],function(){
     require(['jquery','carousel'],function($){
         if(/\?/.test(location.href)){
             var num=location.href.indexOf('?');
-            var phoneN=location.href.slice(num+10,-1);
+            var phoneN=location.href.substr(num+10,11);
             $('#phoneName').html('尊敬的<i>'+phoneN+'</i>用户').addClass('pN');
         }
         //二级导航
@@ -24,7 +24,7 @@ require(['config'],function(){
             page:true,
             type:'horizontal'
         });
-        //主要数据Ajax请求
+    //主要数据Ajax请求
     $.ajax({
             url: '../api/MySQL/index.php',
             dataType:'json',
@@ -50,11 +50,11 @@ require(['config'],function(){
                     <a href="html/list.html"><img src="${res[0].show_img}"/></a>
                 </div>
                 <div class="goods_show clearfix">
-                    <div class="g1"><a href="html/details.html"><img src="${res[0].g1}"/></a></div>
-                    <div class="g2"><a href="html/details.html"><img src="${res[0].g2}"/></a></div>
-                    <div class="g3"><a href="html/details.html"><img src="${res[0].g3}"/></a></div>
-                    <div class="g4"><a href="html/details.html"><img src="${res[0].g4}"/></a></div>
-                    <div class="g5"><a href="html/details.html"><img src="${res[0].g5}"/></a></div>
+                    <div class="g1"><img src="${res[0].g1}"/></div>
+                    <div class="g2"><img src="${res[0].g2}"/></div>
+                    <div class="g3"><img src="${res[0].g3}"/></div>
+                    <div class="g4"><img src="${res[0].g4}"/></div>
+                    <div class="g5"><img src="${res[0].g5}"/></div>
                 </div>
                 </div>`;
                     $('#main1').html(html1);
@@ -73,11 +73,11 @@ require(['config'],function(){
                         </div>
                     </div>
                     <div class="goods_show clearfix">
-                        <div class="g1"><a href="html/details.html"><img src="${res[1].g1}"/></a></div>
-                        <div class="g2"><a href="html/details.html"><img src="${res[1].g2}"/></a></div>
-                        <div class="g3"><a href="html/details.html"><img src="${res[1].g3}"/></a></div>
-                        <div class="g4"><a href="html/details.html"><img src="${res[1].g4}"/></a></div>
-                        <div class="g5"><a href="html/details.html"><img src="${res[1].g5}"/></a></div>
+                        <div class="g1"><img src="${res[1].g1}"/></div>
+                        <div class="g2"><img src="${res[1].g2}"/></div>
+                        <div class="g3"><img src="${res[1].g3}"/></div>
+                        <div class="g4"><img src="${res[1].g4}"/></div>
+                        <div class="g5"><img src="${res[1].g5}"/></div>
                     </div>
                     <div class="show_img">
                         <a href="html/list.html"><img src="${res[1].show_img}"/></a>
@@ -105,11 +105,11 @@ require(['config'],function(){
                     <a href="html/list.html"><img src="${res[2].show_img}"/></a>
                 </div>
                 <div class="goods_show clearfix">
-                    <div class="g1"><a href="html/details.html"><img src="${res[2].g1}"/></a></div>
-                    <div class="g2"><a href="html/details.html"><img src="${res[2].g2}"/></a></div>
-                    <div class="g3"><a href="html/details.html"><img src="${res[2].g3}"/></a></div>
-                    <div class="g4"><a href="html/details.html"><img src="${res[2].g4}"/></a></div>
-                    <div class="g5"><a href="html/details.html"><img src="${res[2].g5}"/></a></div>
+                    <div class="g1"><img src="${res[2].g1}"/></div>
+                    <div class="g2"><img src="${res[2].g2}"/></div>
+                    <div class="g3"><img src="${res[2].g3}"/></div>
+                    <div class="g4"><img src="${res[2].g4}"/></div>
+                    <div class="g5"><img src="${res[2].g5}"/></div>
                 </div>
                 </div>`;
                 $('#main3').html(html3); 
@@ -129,11 +129,11 @@ require(['config'],function(){
                     </div>
                 </div>
                 <div class="goods_show clearfix">
-                    <div class="g1"><a href="html/details.html"><img src="${res[3].g1}"/></a></div>
-                    <div class="g2"><a href="html/details.html"><img src="${res[3].g2}"/></a></div>
-                    <div class="g3"><a href="html/details.html"><img src="${res[3].g3}"/></a></div>
-                    <div class="g4"><a href="html/details.html"><img src="${res[3].g4}"/></a></div>
-                    <div class="g5"><a href="html/details.html"><img src="${res[3].g5}"/></a></div>
+                    <div class="g1"><img src="${res[3].g1}"/></div>
+                    <div class="g2"><img src="${res[3].g2}"/></div>
+                    <div class="g3"><img src="${res[3].g3}"/></div>
+                    <div class="g4"><img src="${res[3].g4}"/></div>
+                    <div class="g5"><img src="${res[3].g5}"/></div>
                 </div>
                 <div class="show_img">
                     <a href="html/list.html"><img src="${res[3].show_img}"/></a>
@@ -157,11 +157,11 @@ require(['config'],function(){
                     </div>
                 </div>
                 <div class="goods_show clearfix">
-                    <div class="g1"><a href="html/details.html"><img src="${res[4].g1}"/></a></div>
-                    <div class="g2"><a href="html/details.html"><img src="${res[4].g2}"/></a></div>
-                    <div class="g3"><a href="html/details.html"><img src="${res[4].g3}"/></a></div>
-                    <div class="g4"><a href="html/details.html"><img src="${res[4].g4}"/></a></div>
-                    <div class="g5"><a href="html/details.html"><img src="${res[4].g5}"/></a></div>
+                    <div class="g1"><img src="${res[4].g1}"/></div>
+                    <div class="g2"><img src="${res[4].g2}"/></div>
+                    <div class="g3"><img src="${res[4].g3}"/></div>
+                    <div class="g4"><img src="${res[4].g4}"/></div>
+                    <div class="g5"><img src="${res[4].g5}"/></div>
                 </div>
                 <div class="show_img">
                     <a href="html/list.html"><img src="${res[4].show_img}"/></a>
@@ -170,7 +170,35 @@ require(['config'],function(){
                $('#main5').html(html5);
             }
     });    
+    //商品点击跳转详情页
+        $('.main').on('click','.g1,.g2,.g3,.g4,.g5',function(){
+            var phrase='gN='+this.className+'&model='+$(this).parents('.main').get(0).id+'&from=index';
+            if(/\?/.test(location.href)){
+                var num=location.href.indexOf('?');
+                var phoneN=location.href.substr(num+10,11);
+                var url_='html/details.html?UserName='+phoneN+'&';           
+            }else{
+                var url_='html/details.html?';
+            }
+            location.href=url_+phrase;         
+        });   
         //门店信息（数量较少，故不用Ajax请求）
+        $('.city').on('mouseenter','span',function(){
+            var cityName=$(this).text();
+            // $('.address p').text('');
+            for(var i=0;i<cityData.length;i++){
+                if(cityName==cityData[i].city){
+                    var ps=$('.address').children();
+                    ps.first().text(cityData[i].ad1);
+                    ps.eq(1).text(cityData[i].ad2);
+                    ps.eq(2).text(cityData[i].ad3);
+                    ps.last().text(cityData[i].ad4);
+                    console.log(cityData[i].img)
+                    $('.city_img img').attr('src',cityData[i].img);
+                    return ;
+                }
+            }
+        });
         var cityData=[
             {   city:'北京',
                 ad1:'北京·朝阳区旗舰店 体验中心',
@@ -240,21 +268,5 @@ require(['config'],function(){
                 img:'img/jiangxi.jpg' 
             }
         ];
-        $('.city').on('mouseenter','span',function(){
-            var cityName=$(this).text();
-            // $('.address p').text('');
-            for(var i=0;i<cityData.length;i++){
-                if(cityName==cityData[i].city){
-                    var ps=$('.address').children();
-                    ps.first().text(cityData[i].ad1);
-                    ps.eq(1).text(cityData[i].ad2);
-                    ps.eq(2).text(cityData[i].ad3);
-                    ps.last().text(cityData[i].ad4);
-                    console.log(cityData[i].img)
-                    $('.city_img img').attr('src',cityData[i].img);
-                    return ;
-                }
-            }
-        });
     });
 });

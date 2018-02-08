@@ -10,11 +10,17 @@
 }
 
 .topbar .right a {
-  width: 88px;
+  width: 84px;
   display: inline-block;
   text-align: center;
   background: url("../img/icon.png") no-repeat;
   line-height: 25px;
+}
+
+.topbar .pN i {
+  color: red;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .topbar .right .cart {
