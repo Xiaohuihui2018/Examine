@@ -61,7 +61,7 @@ require(['config'],function(){
                              if($('.m3 input').prop('checked')){
                                 var now=new Date();
                                 now.setDate(now.getDate()+7);
-                                document.cookie='UserName='+phone+';expires='+now.toUTCString();
+                                document.cookie='UserName='+phone+';expires='+now.toUTCString()+';path=/';
                              }
                              location.href='../index.html?UserName='+phone;
                          }else if(res==='fail'){
